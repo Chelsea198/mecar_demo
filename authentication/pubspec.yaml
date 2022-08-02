@@ -25,5 +25,11 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  fonts:
+    - family: SFUIText
+      fonts:
+        - asset: assets/fonts/SFUIText-Regular.ttf
+        - asset: assets/fonts/SFUIText-Semibold.ttf
+          weight: 600
   assets:
     - assets/langs/

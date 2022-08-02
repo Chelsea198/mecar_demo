@@ -1,3 +1,4 @@
+import 'package:authentication/theme/ui_theme.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 
@@ -23,10 +24,8 @@ class MyApp extends StatelessWidget {
       locale: context.locale,
       localizationsDelegates: context.localizationDelegates,
       supportedLocales: context.supportedLocales,
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      themeMode: ThemeMode.system,
+      theme: uiThemeLight,
+      darkTheme: uiThemeDark,
       home: MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
