@@ -12,7 +12,7 @@ class UITextStyle {
   static const TextStyle white_28w600 = TextStyle(
     fontFamily: "SFUIText",
     fontWeight: FontWeight.w600,
-    fontSize: 16,
+    fontSize: 28,
     color: UIColor.white,
   );
 
@@ -27,6 +27,20 @@ class UITextStyle {
     fontFamily: "SFUIText",
     fontWeight: FontWeight.w400,
     fontSize: 14,
+    color: UIColor.blackWash,
+  );
+
+  static const TextStyle blackWash_14w600 = TextStyle(
+    fontFamily: "SFUIText",
+    fontWeight: FontWeight.w600,
+    fontSize: 14,
+    color: UIColor.blackWash,
+  );
+
+  static const TextStyle blackWash_16w400 = TextStyle(
+    fontFamily: "SFUIText",
+    fontWeight: FontWeight.w400,
+    fontSize: 16,
     color: UIColor.blackWash,
   );
 

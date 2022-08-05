@@ -19,6 +19,15 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
 
+  # swiper/carousel for flutter, with multiple layouts, infinite loop. Compatible with Android & iOS.
+  card_swiper: ^2.0.4
+
+  # A Dart package that helps to implement value based equality without needing to explicitly override == and hashCode.
+  equatable: ^2.0.3
+
+  # Flutter Widgets that make it easy to implement the BLoC (Business Logic Component) design pattern. Built to be used with the bloc state management package.
+  flutter_bloc: ^8.0.1
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -33,3 +42,5 @@ flutter:
           weight: 600
   assets:
     - assets/langs/
+    - assets/icons/
+    - assets/images/

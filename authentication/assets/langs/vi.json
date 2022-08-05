@@ -1,3 +1,8 @@
 {
-  "app_name": "Authentication"
+  "app_name": "Authentication",
+  "welcome": "Welcome",
+  "introduce": "You’re only a few step away from joining MeCar",
+  "login_with": "Login with Email/Phone",
+  "do_not_have_account" : "Don’t have account?",
+  "sign_up": "Sign up"
 }

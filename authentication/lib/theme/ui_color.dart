@@ -7,4 +7,5 @@ class UIColor {
   static const Color blackWash = Color(0xFF0C0D0E);
   static const Color blackDark = Color(0xFF010101);
   static const Color blueSparkle = Color(0xFF007AFC);
+  static const Color paginationColor = Color(0xff979797);
 }
