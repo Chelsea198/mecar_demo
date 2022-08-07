@@ -1,3 +1,4 @@
+import 'package:authentication/core/constants/constants.dart';
 import 'package:authentication/features/auth/presentation/pages/welcome/welcome_page.dart';
 import 'package:authentication/theme/ui_theme.dart';
 import 'package:easy_localization/easy_localization.dart';
@@ -9,7 +10,7 @@ void main() async {
   runApp(
     EasyLocalization(
       supportedLocales: const [Locale('en'), Locale('vi')],
-      path: 'assets/langs',
+      path: Constants.languagePath,
       useOnlyLangCode: true,
       fallbackLocale: const Locale('en'),
       child: MyApp(),
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Authentication',
+      title: Constants.titleApp,
       locale: context.locale,
       localizationsDelegates: context.localizationDelegates,
       supportedLocales: context.supportedLocales,

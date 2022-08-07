@@ -1,3 +1,4 @@
+import 'package:authentication/core/constants/constants.dart';
 import 'package:authentication/core/extensions/string_ext.dart';
 import 'package:authentication/features/auth/presentation/pages/sign_up/enter_phone_number_sign_up_page.dart';
 import 'package:authentication/features/auth/presentation/pages/welcome/widgets/slide_welcome_widget.dart';
@@ -46,7 +47,7 @@ class WelcomePage extends StatelessWidget {
                               width: size.width,
                             ),
                             Image.asset(
-                              "assets/icons/ic_email.png",
+                              Constants.icEmailPath,
                               width: 22,
                               height: 17,
                             ),
