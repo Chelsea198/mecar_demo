@@ -11,5 +11,9 @@
   "login": "Login",
   "terms_of_use": "terms of use",
   "privacy_policy": "privacy policy",
-  "sign_up_description": "By register, I agree to Autoo’s terms of use & acknowledge their privacy policy"
+  "sign_up_description": "By register, I agree to Autoo’s terms of use & acknowledge their privacy policy",
+  "verification": "Verification",
+  "verification_description": "Please enter the 6 digit code that was sent to {phoneNumber}",
+  "verify": "Verify",
+  "resend_code": "Resend code {time}"
 }

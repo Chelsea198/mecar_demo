@@ -44,6 +44,13 @@ class UITextStyle {
     color: UIColor.blackWash,
   );
 
+  static const TextStyle blackWash_20w400 = TextStyle(
+    fontFamily: "SFUIText",
+    fontWeight: FontWeight.w400,
+    fontSize: 20,
+    color: UIColor.blackWash,
+  );
+
   static const TextStyle blueSparkle_14w400 = TextStyle(
     fontFamily: "SFUIText",
     fontWeight: FontWeight.w400,
@@ -59,6 +66,13 @@ class UITextStyle {
   );
 
   static const TextStyle hintTextStyle = TextStyle(
+    fontFamily: "SFUIText",
+    fontWeight: FontWeight.w400,
+    fontSize: 14,
+    color: UIColor.hintTextColor,
+  );
+
+  static const TextStyle grey_14w400 = TextStyle(
     fontFamily: "SFUIText",
     fontWeight: FontWeight.w400,
     fontSize: 14,
