@@ -36,7 +36,7 @@ class EnterPhoneNumberSignUpPage extends StatelessWidget {
           },
           child: Column(
             children: [
-              const Expanded(
+              Expanded(
                 child: SingleChildScrollView(
                   child: FormEnterPhoneNumber(),
                 ),

@@ -12,14 +12,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-class FormEnterPhoneNumber extends StatefulWidget {
-  const FormEnterPhoneNumber({Key? key}) : super(key: key);
-
-  @override
-  _FormEnterPhoneNumberState createState() => _FormEnterPhoneNumberState();
-}
-
-class _FormEnterPhoneNumberState extends State<FormEnterPhoneNumber> {
+class FormEnterPhoneNumber extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
