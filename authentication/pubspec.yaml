@@ -28,6 +28,9 @@ dependencies:
   # Flutter Widgets that make it easy to implement the BLoC (Business Logic Component) design pattern. Built to be used with the bloc state management package.
   flutter_bloc: ^8.0.1
 
+  # The EasyRichText widget provides an easy way to use RichText. You do not have to split the string manually.
+  easy_rich_text: ^1.1.0
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

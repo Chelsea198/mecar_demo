@@ -4,5 +4,12 @@
   "introduce": "You’re only a few step away from joining MeCar",
   "login_with": "Login with Email/Phone",
   "do_not_have_account": "Don’t have account?",
-  "sign_up": "Sign up"
+  "sign_up": "Sign up",
+  "phone_number": "Phone number",
+  "next": "Next",
+  "already_a_member": "Already a member?",
+  "login": "Login",
+  "terms_of_use": "terms of use",
+  "privacy_policy": "privacy policy",
+  "sign_up_description": "By register, I agree to Autoo’s terms of use & acknowledge their privacy policy"
 }

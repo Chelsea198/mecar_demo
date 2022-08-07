@@ -1,4 +1,5 @@
 import 'package:authentication/core/extensions/string_ext.dart';
+import 'package:authentication/features/auth/presentation/pages/sign_up/enter_phone_number_sign_up_page.dart';
 import 'package:authentication/features/auth/presentation/pages/welcome/widgets/slide_welcome_widget.dart';
 import 'package:authentication/locale_keys.g.dart';
 import 'package:authentication/theme/ui_color.dart';
@@ -16,53 +17,55 @@ class WelcomePage extends StatelessWidget {
       body: Column(
         children: [
           Expanded(
-            child: Column(
-              children: [
-                SlideWelcomeWidget(slideImages: slideImages),
-                SizedBox(
-                  height: size.height * 0.17,
-                ),
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 16),
-                  child: TextButton(
-                    style: ButtonStyle(
-                      shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                        RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(2),
-                          side: const BorderSide(
-                            color: UIColor.blackWash,
+            child: SingleChildScrollView(
+              child: Column(
+                children: [
+                  SlideWelcomeWidget(slideImages: slideImages),
+                  SizedBox(
+                    height: size.height * 0.17,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 16),
+                    child: TextButton(
+                      style: ButtonStyle(
+                        shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                          RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(2),
+                            side: const BorderSide(
+                              color: UIColor.blackWash,
+                            ),
                           ),
                         ),
                       ),
-                    ),
-                    onPressed: () => {},
-                    child: Padding(
-                      padding: const EdgeInsets.only(left: 16, top: 16, bottom: 16),
-                      child: Stack(
-                        children: [
-                          SizedBox(
-                            width: size.width,
-                          ),
-                          Image.asset(
-                            "assets/icons/ic_email.png",
-                            width: 22,
-                            height: 17,
-                          ),
-                          Align(
-                            child: Text(
-                              LocaleKeys.login_with.trans(),
-                              style: UITextStyle.blackWash_16w400.copyWith(
-                                decoration: TextDecoration.underline,
-                                decorationColor: UIColor.blackWash,
-                              ),
+                      onPressed: () => {},
+                      child: Padding(
+                        padding: const EdgeInsets.only(left: 16, top: 16, bottom: 16),
+                        child: Stack(
+                          children: [
+                            SizedBox(
+                              width: size.width,
                             ),
-                          )
-                        ],
+                            Image.asset(
+                              "assets/icons/ic_email.png",
+                              width: 22,
+                              height: 17,
+                            ),
+                            Align(
+                              child: Text(
+                                LocaleKeys.login_with.trans(),
+                                style: UITextStyle.blackWash_16w400.copyWith(
+                                  decoration: TextDecoration.underline,
+                                  decorationColor: UIColor.blackWash,
+                                ),
+                              ),
+                            )
+                          ],
+                        ),
                       ),
                     ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
           ),
           Padding(
@@ -75,7 +78,12 @@ class WelcomePage extends StatelessWidget {
                   style: UITextStyle.blackWash_14w400,
                 ),
                 TextButton(
-                  onPressed: () => {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => const EnterPhoneNumberSignUpPage()),
+                    );
+                  },
                   child: Text(
                     LocaleKeys.sign_up.trans(),
                     style: UITextStyle.blackWash_14w600,
