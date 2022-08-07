@@ -1,5 +1,6 @@
 import 'package:authentication/core/constants/constants.dart';
-import 'package:authentication/features/auth/presentation/pages/welcome/welcome_page.dart';
+import 'package:authentication/core/router/route_name.dart';
+import 'package:authentication/core/router/router.dart';
 import 'package:authentication/theme/ui_theme.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
@@ -28,7 +29,8 @@ class MyApp extends StatelessWidget {
       supportedLocales: context.supportedLocales,
       theme: uiThemeLight,
       darkTheme: uiThemeDark,
-      home: const WelcomePage(),
+      initialRoute: RouteName.welcomeRoute,
+      onGenerateRoute: MyRouter.generateRoute,
     );
   }
 }

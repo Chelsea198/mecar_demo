@@ -88,26 +88,23 @@ class _OTPInput extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 116),
-      child: BlocBuilder<VerificationOTPBloc, VerificationOTPState>(
-        buildWhen: (previous, current) => previous.otp != current.otp,
-        builder: (context, state) => PinCodeTextField(
-          appContext: context,
-          length: Constants.lengthOTP,
-          autoFocus: true,
-          onChanged: (otp) {
-            context.read<VerificationOTPBloc>().add(OTPChangedEvent(otp: otp));
-          },
-          keyboardType: TextInputType.number,
-          textStyle: UITextStyle.blackWash_20w400,
-          showCursor: false,
-          pinTheme: PinTheme(
-            shape: PinCodeFieldShape.underline,
-            activeColor: UIColor.grey,
-            activeFillColor: UIColor.grey,
-            selectedColor: UIColor.grey,
-            inactiveColor: UIColor.grey,
-            fieldWidth: 22,
-          ),
+      child: PinCodeTextField(
+        appContext: context,
+        length: Constants.lengthOTP,
+        autoFocus: true,
+        onChanged: (otp) {
+          context.read<VerificationOTPBloc>().add(OTPChangedEvent(otp: otp));
+        },
+        keyboardType: TextInputType.number,
+        textStyle: UITextStyle.blackWash_20w400,
+        showCursor: false,
+        pinTheme: PinTheme(
+          shape: PinCodeFieldShape.underline,
+          activeColor: UIColor.grey,
+          activeFillColor: UIColor.grey,
+          selectedColor: UIColor.grey,
+          inactiveColor: UIColor.grey,
+          fieldWidth: 22,
         ),
       ),
     );

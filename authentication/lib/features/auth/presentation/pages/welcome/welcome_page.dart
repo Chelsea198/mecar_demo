@@ -1,6 +1,6 @@
 import 'package:authentication/core/constants/constants.dart';
 import 'package:authentication/core/extensions/string_ext.dart';
-import 'package:authentication/features/auth/presentation/pages/sign_up/enter_phone_number_sign_up_page.dart';
+import 'package:authentication/core/router/route_name.dart';
 import 'package:authentication/features/auth/presentation/pages/welcome/widgets/slide_welcome_widget.dart';
 import 'package:authentication/locale_keys.g.dart';
 import 'package:authentication/theme/ui_color.dart';
@@ -80,10 +80,7 @@ class WelcomePage extends StatelessWidget {
                 ),
                 TextButton(
                   onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => const EnterPhoneNumberSignUpPage()),
-                    );
+                    Navigator.pushNamed(context, RouteName.enterPhoneSignUpRoute);
                   },
                   child: Text(
                     LocaleKeys.sign_up.trans(),
