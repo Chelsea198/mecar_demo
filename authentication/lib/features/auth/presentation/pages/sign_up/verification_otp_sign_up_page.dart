@@ -141,7 +141,7 @@ class _ResendOTP extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocBuilder<VerificationOTPBloc, VerificationOTPState>(
       builder: (context, state) => TextButton(
-        onPressed: () => context.read<VerificationOTPBloc>().add(const ResendEvent()),
+        onPressed: state.isEnableResend ? () => context.read<VerificationOTPBloc>().add(const ResendEvent()) : null,
         child: Text(
           LocaleKeys.resend_code.trans(namedArgs: {"time": state.isEnableResend ? "" : "${state.countDownTime}s"}),
           style: state.isEnableResend ? UITextStyle.blueSparkle_14w400 : UITextStyle.grey_14w400,
